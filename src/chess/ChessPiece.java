@@ -1,23 +1,27 @@
-package boardgame;
+package chess;
 
-public class Piece {
+import boardgame.Board;
+import boardgame.Piece;
 
-	protected Position position;
-	private Board board;
+public class ChessPiece extends Piece {
+
+	private Color color;
 
 //-----------------------------------------------------------------------------------------------------------
 
-	public Piece(Board board) {
-		this.board = board;
-		position = null;
+	public ChessPiece(Board board, Color color) {
+		super(board);
+		this.color = color;
 	}
 
 //-----------------------------------------------------------------------------------------------------------
 
-	protected Board getBoard() {
-		return board;
+	public Color getColor() {
+		return color;
 	}
 
 //-----------------------------------------------------------------------------------------------------------
 
+	
+	
 }
