@@ -36,15 +36,15 @@ public class Program {
 				ChessPosition target = UI.readChessPosition(sc);
 
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
-				
-				if(capturedPiece != null) {
+
+				if (capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
-			} 
+			}
 			catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
-			} 
+			}
 			catch (InputMismatchException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
