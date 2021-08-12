@@ -22,6 +22,7 @@ public final class Pawn extends ChessPiece {
 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
 		Position p = new Position(0, 0);
+		Position p2 = new Position(0, 0);
 
 		if (getColor() == Color.WHITE) {
 
@@ -33,7 +34,7 @@ public final class Pawn extends ChessPiece {
 
 			// initial movement
 			p.setValues(position.getRow() - 2, position.getColumn());
-			Position p2 = new Position(position.getRow() - 1, position.getColumn());
+			p2.setValues(position.getRow() - 1, position.getColumn());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p) && getBoard().positionExists(p2) && !getBoard().thereIsAPiece(p2) && getMoveCount() == 0) {
 				mat[p.getRow()][p.getColumn()] = true;
 			}
@@ -60,7 +61,7 @@ public final class Pawn extends ChessPiece {
 
 			// initial movemen
 			p.setValues(position.getRow() + 2, position.getColumn());
-			Position p2 = new Position(position.getRow() + 1, position.getColumn());
+			p2.setValues(position.getRow() + 1, position.getColumn());
 			if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p) && getBoard().positionExists(p2) && !getBoard().thereIsAPiece(p2) && getMoveCount() == 0) {
 				mat[p.getRow()][p.getColumn()] = true;
 			}
