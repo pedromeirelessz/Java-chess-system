@@ -99,7 +99,7 @@ public final class King extends ChessPiece {
 				}
 			}
 
-			// #especial move castling queenside rook
+			// #special move castling queenside rook
 			Position posR2 = new Position(position.getRow(), position.getColumn() - 4);
 			if (testRookCastling(posR2)) {
 				Position p1 = new Position(position.getRow(), position.getColumn() - 1);
