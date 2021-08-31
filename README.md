@@ -85,7 +85,9 @@ Java chess system
 
 ## Technologies used
 
+<a href="https://github.com/phmeyreles" target="_blank">
 <img align="center" height="80" width="100" src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg'>
+</a> 
  
 ## How to run the project
 
@@ -95,5 +97,6 @@ Prerequisites: Java 15
 
 Pedro Meireles
 <br>
+<a href="https://github.com/phmeyreles" target="_blank">
 @phmeyreles
-
+</a>
